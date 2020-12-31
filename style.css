@@ -148,9 +148,11 @@ input {
   font-size: 1.1rem;
 }
 
-.header-logo {
+.header-logo {  
+  box-sizing:border-box;
   height: 18px;
   margin-bottom: -1.5px;
+  border: 1px solid white;
 }
 
 .header-link {

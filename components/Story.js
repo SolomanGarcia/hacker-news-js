@@ -1,5 +1,4 @@
 export default function Story(story) {
-  // console.log(story);
   return `
   <div class="story">
     <div>
@@ -16,7 +15,7 @@ export default function Story(story) {
         </a>
         |
         <span class="favorite">
-        <img class="heart" src="https://img.icons8.com/plumpy/24/000000/hearts.png"/>
+          <img class="heart" src="https://img.icons8.com/plumpy/24/000000/hearts.png"/>
           Add To Favorites
         </span>
       </div>

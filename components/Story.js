@@ -5,13 +5,13 @@ export default function Story(story) {
     <div>
       <span class="gray">${story.index}</span>
       <span class="upvote">▲</span>
-      <a href="${story.url}">${story.title}</a>
+      <a href="${story.url}" target="_blank">${story.title}</a>
       <span>(${story.domain})</span>
     </div>
     <div>
       <div class="gray">
         ${story.points} points by ${story.user} ${story.time_ago} | 
-        <a href="#/item?id=${story.id}">
+        <a href="#/item?id=${story.id} target="_blank">
           ${story.comments_count} comments
         </a>
         |

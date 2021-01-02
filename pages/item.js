@@ -3,11 +3,19 @@ import view from "../utils/view.js";
 
 export default async function Item() {
   const story = await getStory();
+  const hasComments = story.comments.length > 0;
 
   view.innerHTML = `
   <div>
     ${Story(story)}
-  </div>`;
+  </div>
+  <hr/>
+  ${
+    hasComments
+      ? story.comments.map((comment) => JSON.stringify(comment)).join("")
+      : "No comments"
+  }
+  `;
 }
 
 async function getStory() {

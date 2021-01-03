@@ -169,6 +169,10 @@ input {
   text-decoration: none;
 }
 
+.header-link:hover {
+  text-decoration: none;
+}
+
 .header-button {
   margin-left: 0.25rem;
   color: black;

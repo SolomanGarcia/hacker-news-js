@@ -27,7 +27,7 @@ export default async function Item() {
   <hr/>
   ${
     hasComments
-      ? story.comments.map((comment) => JSON.stringify(comment)).join("")
+      ? story.comments.map((comment) => Comment(comment)).join("")
       : "No comments"
   }
   `;

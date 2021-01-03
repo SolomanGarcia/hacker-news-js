@@ -1,4 +1,5 @@
 import Story from "../components/Story.js";
+import Comment from "../components/Comment.js";
 import baseUrl from "../utils/baseUrl.js";
 import view from "../utils/view.js";
 
